@@ -115,8 +115,8 @@ function App() {
 
       <div className="ticks"></div>
       <section id="spacer"></section> */
-        <h1>hello</h1>
-        <h2>React + vita</h2>
+        <h1>React + vita</h1>
+
       }
     </>
   )
