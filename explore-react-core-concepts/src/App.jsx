@@ -19,7 +19,8 @@ function App() {
       <Parson></Parson>
       <Parson></Parson>
       <Parson></Parson>
-      <Student></Student>
+      <Student grate="7" score="99"></Student>
+      <Student grate="5" score="90"></Student>
       <Calculation></Calculation>
 
 
@@ -37,12 +38,12 @@ function Parson() {
   return <h3> i am a parson with age: {age} and money : {money} tow add :{age + money} name is:{parson.name}  and age:{parson.age}</h3>
 
 }
-
-function Student() {
+const { grate, score } = { grate: '7', score: '90' };
+function Student({ grate, score }) {
   return <div className='student'>
     <h3>This is student</h3>
-    <p>Name:</p>
-    <p>age:</p>
+    <p>class:{grate}</p>
+    <p>score:{score}</p>
   </div>
 }
 
