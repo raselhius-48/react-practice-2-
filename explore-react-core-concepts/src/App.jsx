@@ -3,13 +3,16 @@ import heroImg from './assets/hero.png'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import './App.css'
+import Todo from './Todo'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <h1>React + vita</h1>
+      <h3>React + vita</h3>
+      <Todo task="learn React" ></Todo>
+      <Todo task="Explore core concepts"></Todo>
       <Divice name="iphone" price="15000"></Divice>
       <Divice name="laptop" price="50000"></Divice>
       <Divice name="tab" price="8000"></Divice>
