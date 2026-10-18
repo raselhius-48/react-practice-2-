@@ -10,6 +10,11 @@ function App() {
   return (
     <>
       <h1>React + vita</h1>
+      <Divice name="iphone" price="15000"></Divice>
+      <Divice name="laptop" price="50000"></Divice>
+      <Divice name="tab" price="8000"></Divice>
+      <Divice name="botton" price="1400"></Divice>
+
       <Develop></Develop>
       <Parson></Parson>
       <Parson></Parson>
@@ -51,6 +56,11 @@ function Calculation() {
     </div>
 
   )
+}
+
+function Divice(props) {
+  // console.log(props)
+  return <h3>this is Divice:{props.name} price {props.price}</h3>
 }
 
 function Develop() {
