@@ -11,8 +11,10 @@ function App() {
   return (
     <>
       <h3>React + vita</h3>
-      <Todo task="learn React" ></Todo>
-      <Todo task="Explore core concepts"></Todo>
+      <Todo task="learn React" isDone={true}></Todo>
+      <Todo task="Explore core concepts" isDone={false}></Todo>
+
+
       <Divice name="iphone" price="15000"></Divice>
       <Divice name="laptop" price="50000"></Divice>
       <Divice name="tab" price="8000"></Divice>
@@ -79,5 +81,6 @@ function Develop() {
     </div>
   )
 }
+
 
 export default App
