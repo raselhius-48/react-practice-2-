@@ -23,16 +23,24 @@
 
 
 
-//  type 2 or system -2
-export default function App({ task, isDone }) {
-    if (isDone === true) {
-        return <li>Finished:{task}</li>
-    }
-    return <li>work on:{task}</li>
-}
+// //  type 2 or system -2
+// export default function App({ task, isDone }) {
+//     if (isDone === true) {
+//         return <li>Finished:{task}</li>
+//     }
+//     return <li>work on:{task}</li>
+// }
 
-// type-3 or conditional rendering 3
+
+
+// // type-3 or conditional rendering 3 or ternary operator
+// export default function Todo({ task, isDone }) {
+//     return <li>{isDone ? 'finished' : 'work on'}:{task}</li>
+// }
+
+
+
+// conditinal rendering option 4 : && 
 export default function Todo({ task, isDone }) {
-    return <li>{isDone ? 'finished' : 'work on'}:{task}</li>
+    return (<li>{isDone ? 'finished' : 'work on'}:{task}</li>)
 }
-
